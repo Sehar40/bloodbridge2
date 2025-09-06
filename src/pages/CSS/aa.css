@@ -1,0 +1,114 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Background styling */
+.background {
+  background-image: url('../../images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Privacy Policy Container */
+.privacy-policy-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Headings */
+.privacy-policy-container h2 {
+  text-align: center;
+  color: #E28B2C;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.privacy-policy-container h3 {
+  color: #E28B2C;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Paragraphs */
+.privacy-policy-container p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Bullet Points */
+.privacy-policy-container ul {
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+.privacy-policy-container ul li {
+  margin: 8px 0;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.privacy-policy-container ul li::before {
+  content: "✔"; /* Checkmark symbol */
+  color: #E28B2C;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Privacy Footer */
+.privacy-footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  border-top: 2px solid #E28B2C;
+  padding-top: 15px;
+}
+
+/* Icons & Special Elements */
+.privacy-policy-container strong {
+  color: #E28B2C;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .privacy-policy-container {
+      padding: 20px;
+      margin: 20px;
+  }
+
+  .privacy-policy-container h2 {
+      font-size: 1.8rem;
+  }
+
+  .privacy-policy-container h3 {
+      font-size: 1.3rem;
+  }
+
+  .privacy-policy-container p,
+  .privacy-policy-container ul li {
+      font-size: 0.95rem;
+  }
+}

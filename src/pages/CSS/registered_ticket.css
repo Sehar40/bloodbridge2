@@ -1,0 +1,50 @@
+.admin-ticket-page {
+    padding: 2rem;
+    font-family: "Poppins", sans-serif;
+    background: #121212;
+    color: #fff;
+    min-height: 100vh;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: gold;
+  }
+  
+  .ticket-table-container {
+    overflow-x: auto;
+  }
+  
+  .ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #1e1e1e;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  .ticket-table th,
+  .ticket-table td {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #333;
+  }
+  
+  .ticket-table th {
+    background: #222;
+    color: tomato;
+    font-weight: bold;
+  }
+  
+  .ticket-table tr:hover {
+    background: #292929;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  

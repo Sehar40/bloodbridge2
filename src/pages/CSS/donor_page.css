@@ -1,0 +1,70 @@
+\.donor-page {
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff5f5;
+    color: #000;
+  }
+  
+  .donor-page h1 {
+    text-align: center;
+    color: #8b0000;
+    margin-bottom: 2rem;
+  }
+  
+  .search-donor,
+  .register-donor {
+    background-color: rgba(139, 0, 0, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+  }
+  
+  .search-donor h2,
+  .register-donor h2 {
+    color: #d90429;
+    margin-bottom: 1rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #ef233c;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #d90429;
+  }
+  
+  .donor-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .donor-card {
+    background-color: white;
+    border: 2px solid #ef233c;
+    padding: 1rem;
+    border-radius: 10px;
+    width: calc(50% - 1rem);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .donor-card h3 {
+    color: #d90429;
+  }
+  

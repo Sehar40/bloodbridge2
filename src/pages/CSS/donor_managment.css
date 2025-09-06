@@ -1,0 +1,134 @@
+.donor-management {
+    padding: 2rem;
+    background-color: rgba(139, 0, 0, 0.1);
+    border-radius: 12px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .donor-management h2 {
+    color: #8b0000;
+    margin-bottom: 1rem;
+  }
+  
+  .search-input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+  }
+  
+  .donor-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    /* Show table by default */
+    display: table;
+  }
+  
+  .donor-table th,
+  .donor-table td {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+    white-space: nowrap;
+  }
+  
+  .donor-table th {
+    background-color: #8b0000;
+    color: white;
+  }
+  
+  .edit-btn,
+  .delete-btn {
+    padding: 0.4rem 0.8rem;
+    margin-right: 0.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 0.9rem;
+  }
+  
+  .edit-btn {
+    background-color: #ffa500;
+    color: white;
+  }
+  
+  .delete-btn {
+    background-color: #ef233c;
+    color: white;
+  }
+  
+  /* Card style for mobile */
+  .donor-cards-container {
+    display: none; /* hidden by default */
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Each card style */
+  .donor-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    font-size: 0.9rem;
+  }
+  
+  .donor-card h3 {
+    margin: 0 0 0.5rem;
+    color: #8b0000;
+  }
+  
+  .donor-card p {
+    margin: 0.2rem 0;
+  }
+  
+  .donor-card button {
+    margin-top: 0.7rem;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  
+  .donor-card .edit-btn {
+    background-color: #ffa500;
+    color: white;
+    margin-right: 0.5rem;
+  }
+  
+  .donor-card .delete-btn {
+    background-color: #ef233c;
+    color: white;
+  }
+  
+  /* Responsive - Switch to cards on tablets and smaller */
+  @media (max-width: 768px) {
+    .donor-table {
+      display: none; /* Hide table on smaller screens */
+    }
+  
+    .donor-cards-container {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .donor-management {
+      padding: 1rem;
+    }
+  
+    .search-input {
+      max-width: 100%;
+    }
+  }
+  

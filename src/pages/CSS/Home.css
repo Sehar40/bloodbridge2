@@ -1,0 +1,157 @@
+/* General Container */
+.home-container {
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+  color: #000000; /* Changed from #2b0000 */
+}
+
+/* Button Styles */
+.content-button,
+.extra-content-button {
+  background-color: #ef233c;
+  color: white;
+  padding: 0.6rem 1.2rem;       /* Reduced padding */
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+  width: fit-content;           /* <-- Add this to shrink button to content size */
+}
+
+
+.content-button:hover,
+.extra-content-button:hover {
+  background-color: #d90429;
+}
+
+/* Top Hero Section */
+.background {
+  background-color: #ffeaea;
+  padding: 4rem 2rem;
+  color: #000000; /* Changed from #2b0000 */
+}
+
+.top-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Main text section */
+.text-section {
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  padding: 2rem;
+  border-radius: 16px;
+  color: white;
+  text-align: left;  /* <-- Add this */
+}
+
+.text-section h2 {
+  font-size: 2.5rem;
+  color:white;
+}
+
+.text-section p {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+
+/* Extra Info Section */
+.extra-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3rem 2rem;
+  background-color: #a40000;
+  color: red; /* Changed from #2b0000 */
+}
+
+.extra-text {
+  flex: 1;
+  padding-right: 2rem;
+  color: white;
+}
+
+.extra-text h2 {
+  font-size: 2rem;
+  color: white;
+}
+
+.extra-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+.extra-text ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.extra-text ul li {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+/* Image Section */
+.extra-image {
+  flex: 1;
+  text-align: center;
+}
+
+.extra-home-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Team Section */
+.team-section {
+  padding: 3rem 2rem;
+  background-color: #ffeaea;
+  color: #000000; /* Changed from #2b0000 */
+  text-align: center;
+}
+
+.team-section h2 {
+  font-size: 2rem;
+  color: #d90429;
+  margin-bottom: 2rem;
+}
+
+.team-slider {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background: white;
+  border: 2px solid #ef233c;
+  padding: 1.2rem;
+  border-radius: 16px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.team-card strong {
+  color: #d90429;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.team-card p {
+  color: #000000; /* Changed from #2b0000 */
+  font-size: 0.95rem;
+}

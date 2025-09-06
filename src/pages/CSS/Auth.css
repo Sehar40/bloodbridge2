@@ -1,0 +1,163 @@
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-image: url('../../images/blood.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.auth-card {
+  background: rgba(139, 0, 0, 10); /* Dark red with 80% opacity */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Logo Image */
+.signup-image {
+  width: 130px;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+/* Form Styling */
+.auth-form {
+  text-align: right;
+}
+
+.auth-field {
+  margin-bottom: 0.7rem; /* Reduced from 1rem */
+  text-align: left;
+}
+
+.auth-field label {
+  display: block;
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 0.4rem;
+}
+
+.auth-field input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.auth-field input:focus {
+  border-color: #007bff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Checkbox Styling */
+.auth-checkbox {
+  display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.7rem;
+  color: #ccc;
+  text-align: left;            /* 👈 ensures label text stays left-aligned */
+  width: 100%;  
+}
+
+.auth-checkbox input {
+  margin-right: 8px;
+}
+
+/* Button Styling */
+.auth-button {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  font-size: 1rem;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.auth-button:hover {
+  background: white;
+    transform: scale(1.03);
+}
+
+/* Error Text */
+.error-text {
+  color: #ff7070;
+  margin-bottom: 0.6rem;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+/* Bottom Text */
+.auth-text {
+  margin-top: 0.8rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  text-decoration: none;
+  
+}
+
+.auth-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+  text-decoration: none;
+  color: white
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .auth-title {
+    font-size: 1.4rem;
+  }
+
+  .auth-field input {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .auth-button {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+
+  .auth-text {
+    font-size: 0.85rem;
+  }
+}
+
+
+.checkbox-label {
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.admin-status {
+  font-size: 13px;
+  color: green;
+  margin: 5px 0;
+  text-align: left;
+}

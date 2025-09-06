@@ -1,0 +1,112 @@
+/* Main container */
+.home-container {
+    min-height: 100vh;
+    background-image: url('../../images/blood.jpg');
+
+    color: #e0e0e0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Content section */
+  .content-container {
+    max-width: 1100px;
+background-color: black;
+    margin: 100px auto 80px; /* Increased top margin to create space below navbar */
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    border: 1px solid #444;
+  }
+  
+  /* Heading */
+  .content-container h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff4e50;
+    text-align: center;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+  
+  /* Paragraphs */
+  .content-container p {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 40px;
+    color: #aaa;
+  }
+  
+  /* Table Styling */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #ddd;
+  }
+  
+  /* Table Headers */
+  .data-table thead th {
+    background-color: #ff4e50;
+    color: white;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  /* Table Rows */
+  .data-table tbody tr {
+    background-color: transparent;
+    border-bottom: 1px solid #444;
+    transition: background-color 0.3s ease;
+  }
+  
+  .data-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  /* Table Data Cells */
+  .data-table tbody tr td {
+    padding: 12px 16px;
+    vertical-align: middle;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .data-table {
+      border: 0;
+    }
+  
+    .data-table thead {
+      display: none;
+    }
+  
+    .data-table tbody tr {
+      display: block;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+      background-color: #2c2f48;
+    }
+  
+    .data-table tbody tr td {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 15px;
+      border-bottom: 1px solid #444;
+      font-size: 0.95rem;
+    }
+  
+    .data-table tbody tr td::before {
+      content: attr(data-label);
+      font-weight: 600;
+      color: #ff4e50;
+      flex-basis: 40%;
+      text-align: left;
+    }
+  }
+  

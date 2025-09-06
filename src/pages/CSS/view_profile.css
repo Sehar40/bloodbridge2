@@ -1,0 +1,140 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .profile-container {
+    display: flex;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../../images/blood.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .profile-sidebar {
+    width: 220px;
+    background: linear-gradient(135deg, #7b0000, #a40000);
+    color: white;
+    padding: 30px 20px;
+    border-radius: 0 15px 15px 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-sidebar-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    
+  }
+  
+  .profile-sidebar-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .profile-sidebar-item {
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    text-align: center;
+  }
+  
+  .profile-sidebar-item:hover,
+  .profile-sidebar-item.active {
+    background:  white;
+    color:#a40000
+}
+  
+  .profile-main-content {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+    color: white;
+  }
+  
+  .profile-card {
+    background: rgba(139, 0, 0, 10); /* Dark red with 80% opacity */
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    color: white;
+  }
+  
+  .profile-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color:white
+
+  }
+  
+  .profile-error-text {
+    color:white;
+    margin-bottom: 15px;
+  }
+  
+  .profile-info p {
+    margin: 8px 0;
+      color: white;
+  }
+  
+  .profile-requests-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+          color: white;
+
+  }
+  
+  .profile-request-box {
+    border: 1.5px solid #2575fc;
+    border-radius: 10px;
+    padding: 20px 25px;
+    background-color: #f0f5ff;
+    box-shadow: 0 4px 10px rgba(37, 117, 252, 0.1);
+    color: black;
+  }
+  
+  .profile-request-actions {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .profile-btn-complete,
+  .profile-btn-incomplete {
+    flex: 1;
+    padding: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .profile-btn-complete {
+    background-color: #28a745;
+  }
+  
+  .profile-btn-complete:hover {
+    background-color: #218838;
+  }
+  
+  .profile-btn-incomplete {
+    background-color: #dc3545;
+  }
+  
+  .profile-btn-incomplete:hover {
+    background-color: #c82333;
+  }
+  

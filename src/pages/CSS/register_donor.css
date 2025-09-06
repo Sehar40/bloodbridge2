@@ -1,0 +1,165 @@
+/* register_donor.css */
+
+.become-donor-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url('../../images/blood.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+}
+
+.become-donor-card {
+  background: rgba(139, 0, 0, 0.8); /* Fixed opacity: 0.8 */
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 500px;
+  animation: fadeIn 0.5s ease-in-out;
+  box-sizing: border-box;
+}
+
+.become-donor-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.become-donor-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-field-input {
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border 0.3s;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.auth-field-input:focus {
+  outline: none;
+  border-color: #b31217;
+  box-shadow: 0 0 5px rgba(179, 18, 23, 0.3);
+}
+
+.auth-field-input::placeholder {
+  color: #aaa;
+}
+
+textarea.auth-field-input {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.become-donor-button {
+  background-color: #b31217;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.become-donor-button:hover {
+  background-color: #a00e13;
+}
+
+/* Map popup overlay */
+.map-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.map-popup {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* Close button for map popup if needed */
+.close-map-popup {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  border: none;
+  background: transparent;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #444;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  .become-donor-card {
+    padding: 20px 20px;
+    max-width: 100%;
+    border-radius: 12px;
+  }
+
+  .auth-field-input {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .become-donor-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .map-popup {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  /* Make the map full width and height in popup on small devices */
+  .leaflet-container {
+    height: 300px !important;
+    width: 100% !important;
+    border-radius: 8px;
+  }
+}

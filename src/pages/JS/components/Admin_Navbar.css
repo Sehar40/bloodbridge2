@@ -1,0 +1,109 @@
+.admin-navbar {
+  background: linear-gradient(135deg, #7b0000, #a40000);
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+  }
+  
+  .admin-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .admin-logo-image {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .admin-logo:hover .admin-logo-image {
+    transform: scale(1.1);
+  }
+  
+  .admin-nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .admin-nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 6px 10px;
+    background-color: tomato;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: color 0.3s ease, background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .admin-nav-link:hover {
+    background: tomato;
+    color: white;
+  
+    transform: scale(1.05);
+  }
+  
+  .admin-nav-link.active {
+    background: tomato;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    transform: scale(1.1);
+  }
+  
+  .admin-menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .admin-menu-toggle.open {
+    transform: rotate(90deg);
+  }
+  
+  @media (max-width: 768px) {
+    .admin-menu-toggle {
+      display: block;
+    }
+  
+    .admin-nav-links {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: #111;
+      flex-direction: column;
+      text-align: center;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-20px);
+      transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out, visibility 0.4s;
+    }
+  
+    .admin-nav-links.open {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+  
+    .admin-nav-link {
+      padding: 12px;
+      display: block;
+      width: 100%;
+    }
+  
+    .admin-nav-link:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  }
+  
